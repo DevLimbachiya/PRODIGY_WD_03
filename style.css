@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+    width: 50vmin;
+    height: 50vmin;
+}
+
+.box {
+    height: 15vmin;
+    width: 15vmin;
+    border-radius: 1rem;
+    border: none;
+    font-size: 7vmin;
+    font-weight: bold;
+    text-align: center;
+    color: #0ef;
+    background: #222;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.box:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+
+.winning-box {
+    background: #ffeb3b !important;
+    color: #000 !important;
+    box-shadow: 0px 0px 15px rgba(255, 235, 59, 0.8);
+}
+
+#reset-btn,
+#new-btn {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #0ef, #00bcd4);
+    color: #111;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 1.5rem;
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+    background: linear-gradient(135deg, #00bcd4, #0ef);
+    transform: scale(1.05);
+}
+
+#msg {
+    color: #0ef;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+}
+
+.msg-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.hide {
+    display: none;
+}
