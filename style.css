@@ -58,8 +58,8 @@ h1 {
 }
 
 .winning-box {
-    background: #ffeb3b !important;
-    color: #000 !important;
+    background: #ffeb3b ;
+    color: #000 ;
     box-shadow: 0px 0px 15px rgba(255, 235, 59, 0.8);
 }
 
